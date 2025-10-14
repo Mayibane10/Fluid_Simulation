@@ -4,6 +4,8 @@ This project uses `CMake` and `Mingw-w64`
 
 ---
 
+---
+
 NOTE: this is a work in progress and everything is not fast
 
 Big thanks to Sebastian Lague - https://github.com/seblague for the fluid simulation lesson
