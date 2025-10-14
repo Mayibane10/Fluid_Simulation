@@ -16,12 +16,15 @@ please go visit his channel at - https://www.youtube.com/@SebastianLague
 The `Navier-Strokes` equations (simplified)
 
 Equation 1:
+
 $$ \textcolor{orange} a = \frac{- \nabla \textcolor{skyblue} P}{\textcolor{lightgreen} \rho} + \frac{\textcolor{lightgreen} {F\_{external}}}{\textcolor{lightgreen} \rho} + \textcolor{lightgreen} \nu \nabla^2 \textcolor{orange} U $$
 
 Equation 1 simplified:
+
 $$ \textcolor{orange} a = \frac{- \nabla \textcolor{skyblue} P}{\textcolor{lightgreen} \rho} $$
 
 Equation 2:
+
 $$ \nabla \cdot \textcolor{orange} U = \textcolor{lightgreen} 0 $$
 
 ---
