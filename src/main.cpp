@@ -2,10 +2,14 @@
 // 2D Stable Fluid simulation with GLFW + GLAD
 // Interactive: LMB inject density + velocity, RMB inject force, C clears
 
-#include <bits/stdc++.h>
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <omp.h>
+
+#include <array>
+#include <cstring>
+#include <cmath>
+#include <cstdio>
 
 // Simple grid-based stable fluid implementation (GPU)
 //* Author: Mayiken Bellete - https://github.com/Mayibane10
