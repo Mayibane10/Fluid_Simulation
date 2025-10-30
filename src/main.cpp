@@ -356,6 +356,7 @@ int main()
         return -1;
     }
     glfwMakeContextCurrent(window);
+    glfwWindowHint(GLFW_RESIZABLE, false);
 
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
     {
