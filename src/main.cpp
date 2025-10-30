@@ -106,16 +106,16 @@ void lin_solve_jacobi(int Nlocal, int b, float *x, float *x0, float a, float c, 
         set_bnd(Nlocal, b, x);
         // swap buffers: new becomes old for next iter
         std::swap(x, tempBuf);
-        // after swap, we want x to point to the "new" buffer for next write,
-        // but since x was swapped, we continue — at end, if odd iterations,
-        // x contains old data. To ensure correct final result in original x pointer,
-        // if LIN_ITERS is odd, copy tempBuf -> x (we'll do unify at end)
+        //? after swap, we want x to point to the "new" buffer for next write,
+        //? but since x was swapped, we continue — at end, if odd iterations,
+        //? x contains old data. To ensure correct final result in original x pointer,
+        //? if LIN_ITERS is odd, copy tempBuf -> x (we'll do unify at end)
     }
-    // If number of iterations left us with result in tempBuf (because of final swap),
-    // ensure original x points to latest result by copying if necessary:
-    // Here we simply ensure x contains final by copying tempBuf into x if needed
-    // Detect by comparing pointers? Simpler: run one final copy of tempBuf into x.
-    // (cost is O(n), but small compared to solver)
+    //? If number of iterations left us with result in tempBuf (because of final swap),
+    //? ensure original x points to latest result by copying if necessary:
+    //? Here we simply ensure x contains final by copying tempBuf into x if needed
+    //? Detect by comparing pointers? Simpler: run one final copy of tempBuf into x.
+    //? (cost is O(n), but small compared to solver)
     memcpy(x, tempBuf, sizeof(float) * ((Nlocal + 2) * (Nlocal + 2)));
     set_bnd(Nlocal, b, x);
 }
@@ -192,9 +192,9 @@ void project(int Nlocal, float *velocX, float *velocY, float *p, float *div, flo
 // ---------- density step ----------
 void density_step(int Nlocal, float *x, float *x0, float *Vx, float *Vy, float diff, float dt, float *temp)
 {
-    // swap x0 and x (caller already added sources)
-    // We'll implement as copy swap: copy x into temp, then use diffuse etc.
-    // But simpler: reuse pointers: we expect caller to have prepared x0 as previous state
+    //? swap x0 and x (caller already added sources)
+    //? We'll implement as copy swap: copy x into temp, then use diffuse etc.
+    //? But simpler: reuse pointers: we expect caller to have prepared x0 as previous state
     std::swap(x0, x);
     diffuse(Nlocal, 0, x, x0, diff, dt, temp);
     std::swap(x0, x);
