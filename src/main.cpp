@@ -15,7 +15,7 @@
 //* Author: Mayiken Bellete - https://github.com/Mayibane10
 //* Big thanks to: Sebastian Lague - https://github.com/seblague
 //* Thanks for teaching me about Fluid sim
-//^ Watch his video abou Fluid simulation - https://www.youtube.com/watch?v=Q78wvrQ9xsU&t=263s
+//^ Watch his video about Fluid simulation - https://www.youtube.com/watch?v=Q78wvrQ9xsU&t=263s
 
 // Window
 int WIN_W = 1300, WIN_H = 1300;
