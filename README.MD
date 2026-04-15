@@ -76,7 +76,7 @@ target_link_libraries(${PROJECT_NAME}
 )
 ```
 
-`CMakePresets.json`
+`CMakePresets.json` (Auto generated)
 
 ```json
 {
