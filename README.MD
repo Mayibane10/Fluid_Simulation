@@ -17,19 +17,19 @@ please go visit his channel at - https://www.youtube.com/@SebastianLague
 
 The `Navier-Stokes` equations (simplified)
 
-Equation 1:
+`Equation 1:`
 
 $$
 a = \frac{-\nabla P}{\rho} + \frac{F_{external}}{\rho} + \nu \nabla^2 U
 $$
 
-Equation 1 (simplified):
+`Equation 1 (simplified):`
 
 $$
 a = \frac{-\nabla P}{\rho}
 $$
 
-Equation 2:
+`Equation 2:`
 
 $$
 \nabla \cdot U = 0
